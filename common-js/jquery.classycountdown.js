@@ -8,6 +8,7 @@
  *
  */
 
+
 (function($) {
     $.fn.ClassyCountdown = function(options, callback) {
         var element = $(this);
