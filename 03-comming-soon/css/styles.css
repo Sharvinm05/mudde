@@ -39,7 +39,11 @@ h1,h2,h3{ font-family: 'Poppins', sans-serif; }
 
 p{ line-height: 1.6; font-size: 1.05em; font-weight: 400; color: #555; }
 
-h1{ font-size: 3.5em; line-height: 1; }
+h1{ font-size: 4.5em; line-height: 1; 
+	-webkit-animation: glow 1s ease-in-out infinite alternate;
+	-moz-animation: glow 1s ease-in-out infinite alternate;
+	animation: glow 1s ease-in-out infinite alternate;
+}
 h2{ font-size: 3em; line-height: 1.1; }
 h3{ font-size: 2.5em; }
 h4{ font-size: 1.5em; }
@@ -60,6 +64,17 @@ margin-top: -205px;
 margin-bottom: -15px;
 
 }
+
+  
+  @-webkit-keyframes glow {
+	from {
+	  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+	}
+	
+	to {
+	  text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+	}
+  }
 
 .full-screen{
 	position: relative;
@@ -170,6 +185,22 @@ b.light-color{ color: #444; }
 	
 .main-area .social-btn > li > a:hover:after{ transform: translateX(100%); }
 
+.info-text p{
+	font-size: 16px;
+	
+	padding: 15px;
+	color:  rgb(37, 248, 255);
+	animation:blinkingText 2s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: rgb(37, 248, 255);    }
+    49%{    color: rgb(37, 248, 255); }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: rgb(37, 248, 255);    }
+}
+
+
 
 body, html {
     height: 100%;
@@ -180,7 +211,7 @@ body, html {
 	width: 100%;
 	height: 100%;
 	position: absolute;
-	top: 0;
+	top: 0%;
 	left: 0;
 	background-color: #242f3f;
 	display:flex;
@@ -198,6 +229,7 @@ body {
 	display: inline-block;
 	width: 30px;
 	height: 30px;
+	bottom: 7%;
 	position: relative;
 	border: 4px solid #Fff;
 	animation: loader 2s infinite ease;
@@ -208,12 +240,25 @@ body {
   .load-img {
 	width: 100%;
 	height: 100%;
+	bottom: 7%;
 	position: absolute;
 	display:flex;
 	justify-content: center;
 	align-items: center;
 	z-index: 99999;
 	  
+  }
+
+  .load-text{
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	font-size: 8px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 99999;
+	color: rgba(255, 255, 255, 0.651);
   }
 
   .load-img img {
