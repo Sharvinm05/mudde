@@ -55,11 +55,11 @@
 			}
 			.main-area .social-btn{ position: absolute; bottom: 10%; width: 100%; left: 50%; transform: translateX(-50%); }
 
-			.main-area{ position: relative; height: 100vh; z-index: 2; padding: 0 20px; background-size: cover; color: #fff; bottom: 5%; }
+			.main-area{ position: relative; height: 105vh; z-index: 2; padding: 0 20px; background-size: cover; color: #fff; bottom: 5%; }
 
 			.full-screen{
 				position: relative;
-				height: 98vh;
+				height: 100vh;
 				width: 100vw;
 				overflow: hidden;
 				
