@@ -56,6 +56,14 @@
 			.main-area .social-btn{ position: absolute; bottom: 10%; width: 100%; left: 50%; transform: translateX(-50%); }
 
 			.main-area{ position: relative; height: 95vh; z-index: 2; padding: 0 20px; background-size: cover; color: #fff; bottom: 5%; }
+
+			.full-screen{
+				position: relative;
+				height: 95vh;
+				width: 100vw;
+				overflow: hidden;
+				
+			}
 	/*.main-area center-text	video{
 			position: absolute;
 			width: 100%;
