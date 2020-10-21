@@ -64,6 +64,12 @@
 				overflow: hidden;
 				
 			}
+
+			img{ width: 18%; 
+				margin-top: -105px;
+				margin-bottom: -15px;
+				
+				}
 	/*.main-area center-text	video{
 			position: absolute;
 			width: 100%;
