@@ -165,7 +165,7 @@ b.light-color{ color: #444; }
 
 .main-area .notify-btn:hover{ background: none; }
 
-.main-area .social-btn{ position: absolute; bottom: 40px; width: 100%; left: 50%; transform: translateX(-50%); }
+.main-area .social-btn{ position: absolute; bottom: 55px; width: 100%; left: 50%; transform: translateX(-50%); }
 
 .main-area .social-btn > li > a{ margin: 0 10px; padding-bottom: 7px; position: relative; overflow: hidden; }
 
@@ -177,18 +177,10 @@ b.light-color{ color: #444; }
 
 .info-text p{
 	font-size: 16px;
-	
 	padding: 15px;
 	color:  rgb(37, 248, 255);
-	animation:blinkingText 2s infinite;
 }
-@keyframes blinkingText{
-    0%{     color: rgb(37, 248, 255);    }
-    49%{    color: rgb(37, 248, 255); }
-    60%{    color: transparent; }
-    99%{    color:transparent;  }
-    100%{   color: rgb(37, 248, 255);    }
-}
+
 
 
 
